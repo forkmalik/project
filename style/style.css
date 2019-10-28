@@ -1,10 +1,74 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 28, 2019, 11:43:08 AM
-    Author     : polka
-*/
+body{
+    margin: 0;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+}
+header {
+    position: absolute;
+    height: 1057px;
+    width: 100%;
+    display: grid;
+    background-image: url(../img/liquidigloo-client-youngman.png);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 50px 50px;
+    
+    
+}
+#logo{
+    width: 140px;
+    height: 75px;    
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 293px;
+    background-color: #fa5c65;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    text-align:  center;
+    
+   
+}
+#menu{
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 50px;
+    
+}
+.list{
+     display: inline;
+     margin-right: 80px;
+}
+.menu-img{
+    margin-top: 25px;
+    margin-left: -100px;
+}
 
+#slogan{
+    text-align: left;
+    font-size: 30pt;
+    margin-left: 293px;
+    color: #314a5b;
+}
+#subslogan{
+    margin-top: 180px;
+    margin-left: -415px;
+    font-size: 20pt;
+    color: #314a5b;
+}
+
+.head-btn{
+    margin-top: 230px;
+    margin-left: -1120px;
+    border: none;
+    width: 171px;
+    height: 64px;
+    border-radius: 7px;
+    background-color: rgb(250, 92, 101);
+    color: white;
+    font-size: 12pt;
+}
