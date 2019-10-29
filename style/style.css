@@ -14,7 +14,10 @@ header {
     height: 1057px;
     width: 100%;
     display: grid;
-    background-image: url(../img/liquidigloo-client-youngman.png);
+    background: url(../img/Photo.png) no-repeat;
+    
+    background-position: center center;
+    
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 50px 50px;
     
