@@ -18,7 +18,7 @@ body{
         height: 60px;
         width: 60px;
         border-radius: 50%;
-        background: linear-gradient(90deg, #f4a57b 0%, #8B00FF 100%);
+        background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
     }
     .img-t{
         display: none;
@@ -36,7 +36,7 @@ body{
         border: none;
         outline: none;
         margin: auto;
-        background: linear-gradient(90deg, #f4a57b 0%, #8B00FF 100%);
+        background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
         border-radius: 300px;
         color: white;
         font-size: 20px;
