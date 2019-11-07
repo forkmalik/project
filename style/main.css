@@ -1,0 +1,18 @@
+.main{
+    font-family: 'Nunito Sans', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+.day{
+    display: inline-block;
+    padding-left: 40px;
+    color: #e28d96;
+    font-weight: 600;
+}
+.time{
+    display: inline-block;
+    margin-left: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+}
