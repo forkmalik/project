@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 .header{
-    
+    position: relative;
     width: 100%;
     height: 844px;
     max-height: 40%;
@@ -33,6 +33,8 @@ body{
         
     }
     .header__button{
+        position: absolute;
+        text-align: center;
         border: none;
         outline: none;
         margin: auto;
