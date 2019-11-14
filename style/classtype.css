@@ -14,7 +14,12 @@ font-family: 'Avenir';
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    align-items: center;
    
+}
+.classtype__button{
+    border: none;
+    outline: none;
 }
 .lecture{
     position: absolute;
@@ -35,8 +40,8 @@ font-family: 'Avenir';
     width: 250px;
     height: 500px;
     margin-right: 30px;
-    margin-bottom:20px;
-    padding: 30px; 
+    margin-bottom: 300px;
+    padding: 40px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     text-align: center;
@@ -60,4 +65,29 @@ font-family: 'Avenir';
 .type__clock{
     object-fit: contain;
     vertical-align: middle;
+}
+.type__reserv-button{
+    line-height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 1;
+    transition: 0.3s;
+}
+.type__reserv-button:hover{
+     opacity: 0.6;
+     cursor: pointer;
+}
+.back-button{
+    background: url("../img/back(1).svg") no-repeat;
+    background-position-x: 4px;
+    background-position-y: 2px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+}
+.back-button:hover{
+    color: #EE82EE;
 }

@@ -13,7 +13,6 @@ a{
 .calendar{
     display: flex;
     margin-left: 130px;
-    margin-top: 130px;
 }
 .weekday{
     margin-left: 0;
