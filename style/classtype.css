@@ -20,6 +20,7 @@ font-family: 'Avenir';
 .classtype__button{
     border: none;
     outline: none;
+    background: none;
 }
 .lecture{
     position: absolute;
@@ -71,7 +72,7 @@ font-family: 'Avenir';
     border-radius: 20px;
     background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     opacity: 1;
     transition: 0.3s;
 }
@@ -80,10 +81,6 @@ font-family: 'Avenir';
      cursor: pointer;
 }
 .back-button{
-    background: url("../img/back(1).svg") no-repeat;
-    background-position-x: 4px;
-    background-position-y: 2px;
-    vertical-align: middle;
     font-size: 18px;
     font-weight: 500;
     width: 100px;
