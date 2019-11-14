@@ -1,7 +1,30 @@
+@font-face {
+font-family: 'Avenir';
+    
+    src:    url('https://nomail.com.ua/files/eot/e5dd868df4bbe8841a212dc8d1efb58f.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/e5dd868df4bbe8841a212dc8d1efb58f.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/e5dd868df4bbe8841a212dc8d1efb58f.woff2') format('woff2');
+}
+
+@font-face { font-family: 'Avenir-Light';  src: local('Avenir-Light'), url('https://nomail.com.ua/files/woff/e5dd868df4bbe8841a212dc8d1efb58f.woff') format('woff'); }
 .classtype{
+    font-family: 'Avenir', sans-serif ;
     height: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+   
+}
+.lecture{
+    position: absolute;
+    background: url("../img/lec.png") no-repeat;
+    background-size: 450px;
+    
+}
+.practice{
+    background: url("../img/prac.png") no-repeat;
+    background-size: 450px;
 }
 .type{
     position: relative;
@@ -10,10 +33,31 @@
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
-    height: 400px;
-    margin-right: 20px;
+    height: 500px;
+    margin-right: 30px;
     margin-bottom:20px;
     padding: 30px; 
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.type__title{
+    margin-top: 300px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 22px;
+}
+.time{
+    display: inline-block;
+    margin-right: 150px;
+}
+.type__time{
+    
+    font-weight: 500;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.type__clock{
+    object-fit: contain;
+    vertical-align: middle;
 }
