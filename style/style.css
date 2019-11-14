@@ -28,15 +28,15 @@ body{
     .main-text{
         text-align: center;
         margin-top: 30px;
-        margin-bottom: auto;
+        margin-bottom: 400px;
         font-size: 100px;
         line-height: 22px;
         color: #8B00FF;
         
     }
     .header__button{
-        position: absolute;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         border: none;
         outline: none;
         margin: auto;
@@ -47,8 +47,6 @@ body{
         font-weight: 600;
         line-height: 16px;
         padding: 25px 80px;
-        margin-top: 400px;
-        margin-left: 820px;
         transition: all 0.5s;
     }
     .header__button:hover{

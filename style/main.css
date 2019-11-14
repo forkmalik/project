@@ -1,7 +1,7 @@
 .main{
     font-family: 'Nunito Sans', sans-serif;
     height: 40%;
-    display: none;
+    
 }
 li{
     list-style-type: none;
@@ -11,12 +11,11 @@ a{
     color: #8B00FF;
 }
 .calendar{
-    display: flex;
-    margin-left: 130px;
+    margin-left: 10%;
 }
 .weekday{
-    margin-left: 0;
-    padding-left: 15px;
+    display: inline-block;
+    width: 1%;
 }
 .day{
     color: #ff707f;
@@ -36,7 +35,7 @@ a{
 .contacts{
     display: block;
     margin-top: -125px;
-    margin-left: 1130px;
+    margin-left: 60%;
     
 }
 .contacts__img{
