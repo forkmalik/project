@@ -16,21 +16,31 @@ a{
 .weekday{
     display: inline-block;
     width: 1%;
+    margin-bottom: 10px;
 }
 .day{
     color: #ff707f;
     font-weight: 600;
     padding-left: 8px;
 }
+.weekend{
+    display:block;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
 .time{
     margin-top: 20px;
 }
 .line{
     margin-left: 20px;
+    margin-top: -30px;
 }
 .none-line{
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .contacts{
     display: block;

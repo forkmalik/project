@@ -4,6 +4,7 @@ var $secondImg = $(".img-t");
 var $bookingButton = $(".header__button");
 var $firstScreen = $(".main");
 var $secondScreen = $(".classtype");
+var $backButton = $(".back-button");
 
 $hamburgerButton.hover(function(event){
     event.preventDefault();
@@ -24,5 +25,12 @@ $bookingButton.click(function(event){
     if(!$secondScreen || $secondScreen.css('display', 'none')){
         $firstScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
+    }
+});
+$backButton.click(function(event){
+    event.preventDefault();
+    if(!$firstScreen || $firstScreen.css('display', 'none')){
+        $secondScreen.css('display', 'none');
+        $firstScreen.css('display', 'initial');
     }
 });
