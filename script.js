@@ -34,3 +34,46 @@ $backButton.click(function(event){
         $firstScreen.css('display', 'initial');
     }
 });
+
+ $( document ).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    margin:10,
+    nav:true,
+    navClass: ['slider__nav--left', 'slider__nav--right'],
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        },
+        900:{
+            items:3
+        },
+        1200:{
+            items: 4
+        }
+    }
+});
+});
+
+ var $lectureButton = $(".lecture-button");
+ var $thirdScreen = $('.auditoies');
+ var $backButtonLecture = $('.back-button__lecture');
+ 
+ $lectureButton.click(function(event){
+    event.preventDefault();
+    if(!$thirdScreen || $thirdScreen.css('display', 'none')){
+        $secondScreen.css('display', 'none');
+        $thirdScreen.css('display', 'flex');
+    }
+});
+$backButtonLecture.click(function(event){
+    event.preventDefault();
+    if(!$secondScreen || $secondScreen.css('display', 'none')){
+        $thirdScreen.css('display', 'none');
+        $secondScreen.css('display', 'flex');
+    }
+});
+ 
+ 
