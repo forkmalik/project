@@ -7,7 +7,7 @@ font-family: 'Avenir';
 }
 
 @font-face { font-family: 'Avenir-Light';  src: local('Avenir-Light'), url('https://nomail.com.ua/files/woff/e5dd868df4bbe8841a212dc8d1efb58f.woff') format('woff'); }
-.auditoies{
+.practice-auditories{
     display: none;
     flex-wrap: wrap;
     position: relative; 
@@ -23,7 +23,7 @@ font-family: 'Avenir';
     margin-left: 130px;
     max-width: 1600px;
 }
-.lecture-class{
+.practice-class{
     position: relative;
     overflow: hidden;
     display: flex;
@@ -39,7 +39,7 @@ font-family: 'Avenir';
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.lecture__num{
+.practice__num{
     margin-top: 10px;
     font-weight: 600;
     font-size: 25px;
@@ -51,8 +51,7 @@ font-family: 'Avenir';
     margin-right: 20px;
     margin-bottom: 30px;
 }
-.lecture__cump{
-    
+.practice__cump{
     font-weight: 500;
     font-size: 18px;
     vertical-align: middle;
@@ -71,7 +70,7 @@ font-family: 'Avenir';
      opacity: 0.6;
      cursor: pointer;
 }
-.back-button__lecture{
+.back-button__practice{
     font-size: 18px;
     font-weight: 500;
     transition: 0.2s;
@@ -81,11 +80,11 @@ font-family: 'Avenir';
     
     
 }
-.back-button__lecture:hover{
+.back-button__practice:hover{
     color: #EE82EE;
     cursor: pointer;
 }
-.lecture-type{
+.practice-type{
     font-size: 25px;
     font-weight: 600;
     color: #EE82EE;

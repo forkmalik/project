@@ -75,5 +75,25 @@ $backButtonLecture.click(function(event){
         $secondScreen.css('display', 'flex');
     }
 });
+
+var $practiceButton = $('.practice-button');
+var $fourthScreen = $('.practice-auditories');
+var $backButtonPractice = $('.back-button__practice');
+
+$practiceButton.click(function(event){
+    event.preventDefault();
+    if(!$fourthScreen || $fourthScreen.css('display', 'none')){
+        $secondScreen.css('display', 'none');
+        $fourthScreen.css('display', 'flex');
+    }
+});
+$backButtonPractice.click(function(event){
+    event.preventDefault();
+    if(!$secondScreen || $secondScreen.css('display', 'none')){
+        $fourthScreen.css('display', 'none');
+        $secondScreen.css('display', 'flex');
+    }
+});
+
  
  

@@ -15,6 +15,10 @@ font-family: 'Avenir';
     height: 60%;
     
 }
+.types{
+    display: flex;
+    margin-left: 30px;
+}
 .classtype__button{
     border: none;
     outline: none;
