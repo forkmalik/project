@@ -94,6 +94,3 @@ $backButtonPractice.click(function(event){
         $secondScreen.css('display', 'flex');
     }
 });
-
- 
- 
