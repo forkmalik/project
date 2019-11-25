@@ -1,0 +1,40 @@
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top: 0;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:600px;
+    height: 500px;
+    text-align: center;
+    background-color: transparent;
+    border-radius:5px;
+}
+.popup__header{
+    font-size: 70px;
+    line-height: 22px;
+    color: #EE82EE;
+}
+.popup__submit-btn{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 30px;
+    opacity: 1;
+    transition: 0.3s;
+}
+.popup__submit-btn:hover{
+     opacity: 0.6;
+     cursor: pointer;
+}
