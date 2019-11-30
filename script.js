@@ -113,3 +113,15 @@ $(".classtype__button-choise").click(function(event){
     PopUpShow();
 });
 
+$('.popup__submit-btn').click(function(event){
+    event.preventDefault();
+    PopUpHide();
+    if(!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')){
+        $(".confirm").css('display', 'initial');
+        $thirdScreen.css('display', 'none');
+    }
+    if(!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')){
+        $(".confirm").css('display', 'initial');
+        $fourthScreen.css('display', 'none');
+    }
+});
