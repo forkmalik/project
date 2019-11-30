@@ -26,7 +26,7 @@
 .data{
     display: grid;
     float: right;
-    margin-right: 28%;
+    margin-right: 27%;
     margin-top: -245px;
 }
 .confirm__type{
@@ -34,29 +34,50 @@
     font-weight: 600;
     margin-bottom: 25px;
 }
+.date{
+    margin-top: 12px;
+}
+.number{
+    margin-top: -25px;
+}
+.time{
+    margin-top: 8px;
+}
+.date-value, .time-value, .number-value{
+    font-weight: 700;
+}
+.date-value{
+    margin-left: 120px;
+}
+.time-value{
+    margin-left: 120px;
+}
+.number-value{
+    margin-left: 140px;
+}
 .data-item{
-    margin-top: 10px;
     font-size: 16px;
     font-weight: 300;
 }
-.confirm__number{
-    
+.email-field{
+    margin-top: 55px;
+}
+.phone-field{
+    margin-top: 60px;
 }
 .confirm__btn{
     margin-top: 50px;
     margin-left: 30px;
-    padding: 5px;
-    width: 300px;
+    border: none;
     outline: none;
-    line-height: 40px;
-    border-radius: 20px;
+    margin-bottom: 530px;
     background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
-    font-size: 20px;
-    font-weight: 500;
+    border-radius: 300px;
     color: white;
-    opacity: 1;
-    transition: 0.3s;
-    margin-bottom: 550px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 25px 80px;
 }
 .confirm__btn:hover{
      opacity: 0.6;
