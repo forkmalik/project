@@ -1,5 +1,64 @@
-
+.confirm{
+    
+}
+.confirm__back-button{
+    margin-top: 45px;
+    margin-left: 21%;
+}
+.input-fields{
+    margin-left: 24%;
+    margin-top: -70px;
+    font-size: 18px;
+   
+}
+.input{
+    margin-left: 20px;
+    margin-top: 70px;
+    width: 320px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+}
+.input:focus{
+    border-bottom-color: #EE82EE;
+}
 .data{
+    display: grid;
     float: right;
-  
+    margin-right: 28%;
+    margin-top: -245px;
+}
+.confirm__type{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.data-item{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.confirm__number{
+    
+}
+.confirm__btn{
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+    line-height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: 1;
+    transition: 0.3s;
+    margin-bottom: 550px;
+}
+.confirm__btn:hover{
+     opacity: 0.6;
+     cursor: pointer;
 }
