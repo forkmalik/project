@@ -5,6 +5,7 @@ var $bookingButton = $(".header__button");
 var $firstScreen = $(".main");
 var $secondScreen = $(".classtype");
 var $backButton = $(".back-button");
+var touchedBtn = "";
 
 $hamburgerButton.hover(function(event){
     event.preventDefault();
@@ -19,7 +20,6 @@ $hamburgerButton.hover(function(event){
     $firstImg.css('display', 'initial');
     
 });
-
 $bookingButton.click(function(event){
     event.preventDefault();
     if(!$secondScreen || $secondScreen.css('display', 'none')){
@@ -66,6 +66,7 @@ $backButton.click(function(event){
     if(!$thirdScreen || $thirdScreen.css('display', 'none')){
         $secondScreen.css('display', 'none');
         $thirdScreen.css('display', 'flex');
+        touchedBtn = "lecture";
     }
 });
 $backButtonLecture.click(function(event){
@@ -73,6 +74,7 @@ $backButtonLecture.click(function(event){
     if(!$secondScreen || $secondScreen.css('display', 'none')){
         $thirdScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
+        
     }
 });
 
@@ -85,6 +87,7 @@ $practiceButton.click(function(event){
     if(!$fourthScreen || $fourthScreen.css('display', 'none')){
         $secondScreen.css('display', 'none');
         $fourthScreen.css('display', 'flex');
+        touchedBtn = "practice";
     }
 });
 $backButtonPractice.click(function(event){
@@ -123,5 +126,16 @@ $('.popup__submit-btn').click(function(event){
     if(!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')){
         $(".confirm").css('display', 'initial');
         $fourthScreen.css('display', 'none');
+    }
+});
+$('.confirm__back-button').click(function(event){
+    event.preventDefault();
+    if(!$thirdScreen || $thirdScreen.css('display', 'none') && touchedBtn === "lecture"){
+        $('.confirm').css('display', 'none');
+        $thirdScreen.css('display', 'flex');
+    }
+    if(!$fourthScreen || $fourthScreen.css('display', 'none') && touchedBtn === "practice"){
+        $('.confirm').css('display', 'none');
+        $fourthScreen.css('display', 'flex');
     }
 });

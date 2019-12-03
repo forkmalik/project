@@ -2,8 +2,15 @@
     display: none;
 }
 .confirm__back-button{
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
     margin-top: 45px;
     margin-left: 21%;
+}
+.confirm__back-button:hover{
+    color: #EE82EE;
+    cursor: pointer;
 }
 .input-fields{
     margin-left: 24%;

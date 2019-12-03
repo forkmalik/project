@@ -21,7 +21,8 @@ font-family: 'Avenir';
     background: none;
 }
 .owl-carousel{
-    margin-left: 130px;
+    margin-left: 10px;
+    margin-bottom: 300px;
     max-width: 1600px;
 }
 .lecture-class{
