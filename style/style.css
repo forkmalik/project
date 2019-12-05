@@ -27,12 +27,33 @@ body{
     }
     .main-text{
         text-align: center;
-        margin-top: 30px;
+        margin-top: -400px;
         margin-bottom: 400px;
         font-size: 100px;
         line-height: 22px;
         color: #8B00FF;
         
+    }
+    .hamburger-menu{
+        margin-left: 180px;
+        margin-top: -50px;
+        text-align: center;
+        width: 15%;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
+        color: white;
+        font-size: 40px;
+    }
+    .item-a{
+        color: white;
+    }
+    .item-a:hover{
+        font-weight: 600;
+    }
+    .humburger-menu__items{
+        padding-top: 40px;
     }
     .header__button{
         display: flex;
