@@ -5,7 +5,7 @@ body{
     height: 100%;
 }
 .header{
-    position: relative;
+    display: grid;
     width: 100%;
     height: 844px;
     max-height: 40%;
@@ -26,25 +26,43 @@ body{
         display: none;
     }
     .main-text{
-        text-align: center;
-        margin-top: -400px;
-        margin-bottom: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width:700px;
+        margin-top: -4%;
         font-size: 100px;
         line-height: 22px;
         color: #8B00FF;
         
     }
     .hamburger-menu{
-        margin-left: 180px;
-        margin-top: -50px;
-        text-align: center;
-        width: 15%;
+        display: none;
+        position:absolute;
+        width: 350px;
+        height: 108%;
         padding-right: 30px;
-        padding-bottom: 30px;
-        border-radius: 10px;
+        border-radius: 0 60px 60px 0;
         background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
         color: white;
         font-size: 40px;
+    }
+    .closemenu-btn{
+        margin-left: 60%;
+        margin-top: 70px;
+        border: none;
+        outline: none;
+        background: transparent;
+        transition: all 0.5s;
+    }
+    .closemenu-btn:hover{
+        cursor: pointer;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .hamburger-menu__list{
+        padding-top: 100px;
     }
     .item-a{
         color: white;
@@ -53,14 +71,17 @@ body{
         font-weight: 600;
     }
     .humburger-menu__items{
-        padding-top: 40px;
+        
+        padding-top: 70px;
     }
     .header__button{
-        display: flex;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
         border: none;
         outline: none;
-        margin: auto;
+        height: 80px;
+        width: 300px;
         background: linear-gradient(90deg, #EE82EE 0%, #8B00FF 100%);
         border-radius: 300px;
         color: white;

@@ -20,6 +20,19 @@ $hamburgerButton.hover(function(event){
     $firstImg.css('display', 'initial');
     
 });
+$hamburgerButton.click(function(event){
+    event.preventDefault(); 
+    if(!$('.hamburger-menu') || $('.hamburger-menu').css('display', 'none')){
+       $('.hamburger-menu').show('slow'); 
+       
+    }
+});
+$('.closemenu-btn').click(function(event){
+    event.preventDefault();
+    if($('.hamburger-menu') || $('.hamburger-menu').css('display', 'initial')){
+       $('.hamburger-menu').hide('slow'); 
+    }
+});
 $bookingButton.click(function(event){
     event.preventDefault();
     if(!$secondScreen || $secondScreen.css('display', 'none')){
