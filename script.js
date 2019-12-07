@@ -7,6 +7,9 @@ var $secondScreen = $(".classtype");
 var $backButton = $(".back-button");
 var touchedBtn = "";
 
+window.location.hash = '#main';
+localStorage.setItem ("ActiveTabID", "main");
+
 $hamburgerButton.hover(function(event){
     event.preventDefault();
     $(this).css('cursor', 'pointer');
@@ -39,6 +42,8 @@ $bookingButton.click(function(event){
         $firstScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
     }
+    window.location.hash = '#classtype';
+    localStorage.setItem ("ActiveTabID", "classtype");
 });
 $backButton.click(function(event){
     event.preventDefault();
@@ -46,6 +51,7 @@ $backButton.click(function(event){
         $secondScreen.css('display', 'none');
         $firstScreen.css('display', 'initial');
     }
+    window.location.hash = '#main';
 });
 
  $( document ).ready(function() {
@@ -81,6 +87,8 @@ $backButton.click(function(event){
         $thirdScreen.css('display', 'flex');
         touchedBtn = "lecture";
     }
+    window.location.hash = '#lecture';
+    localStorage.setItem ("ActiveTabID", "lecture");
 });
 $backButtonLecture.click(function(event){
     event.preventDefault();
@@ -89,6 +97,7 @@ $backButtonLecture.click(function(event){
         $secondScreen.css('display', 'flex');
         
     }
+    window.location.hash = '#classtype';
 });
 
 var $practiceButton = $('.practice-button');
@@ -102,6 +111,8 @@ $practiceButton.click(function(event){
         $fourthScreen.css('display', 'flex');
         touchedBtn = "practice";
     }
+    window.location.hash = '#practice';
+    localStorage.setItem ("ActiveTabID", "practise");
 });
 $backButtonPractice.click(function(event){
     event.preventDefault();
@@ -109,6 +120,7 @@ $backButtonPractice.click(function(event){
         $fourthScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
     }
+    window.location.hash = '#classtype';
 });
 
 $(document).ready(function(){
@@ -135,10 +147,15 @@ $('.popup__submit-btn').click(function(event){
     if(!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')){
         $(".confirm").css('display', 'initial');
         $thirdScreen.css('display', 'none');
+        window.location.hash = '#confirm';
+        localStorage.setItem ("ActiveTabID", "confirm");
     }
     if(!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')){
         $(".confirm").css('display', 'initial');
         $fourthScreen.css('display', 'none');
+        window.location.hash = '#confirm';
+        localStorage.setItem ("ActiveTabID", "confirm");
+
     }
 });
 $('.confirm__back-button').click(function(event){
@@ -146,9 +163,22 @@ $('.confirm__back-button').click(function(event){
     if(!$thirdScreen || $thirdScreen.css('display', 'none') && touchedBtn === "lecture"){
         $('.confirm').css('display', 'none');
         $thirdScreen.css('display', 'flex');
+        window.location.hash = '#lecture';
     }
     if(!$fourthScreen || $fourthScreen.css('display', 'none') && touchedBtn === "practice"){
         $('.confirm').css('display', 'none');
         $fourthScreen.css('display', 'flex');
+        window.location.hash = '#practice';
     }
 });
+
+ $(window).on('load', function(){
+     var hash = window.location.hash;
+     
+     if(hash === '#classtype'){
+         $secondScreen.show('slow');
+     }
+     else{
+         console.log(hash);
+     }
+ });
