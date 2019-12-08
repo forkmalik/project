@@ -7,6 +7,7 @@ var $secondScreen = $(".classtype");
 var $backButton = $(".back-button");
 var touchedBtn = "";
 
+
 window.location.hash = '#main';
 localStorage.setItem ("ActiveTabID", "main");
 
@@ -42,8 +43,8 @@ $bookingButton.click(function(event){
         $firstScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
     }
+    document.cookie = "hash = classtype";
     window.location.hash = '#classtype';
-    localStorage.setItem ("ActiveTabID", "classtype");
 });
 $backButton.click(function(event){
     event.preventDefault();
@@ -88,7 +89,7 @@ $backButton.click(function(event){
         touchedBtn = "lecture";
     }
     window.location.hash = '#lecture';
-    localStorage.setItem ("ActiveTabID", "lecture");
+    document.cookie = "hash = lecture";
 });
 $backButtonLecture.click(function(event){
     event.preventDefault();
@@ -112,7 +113,7 @@ $practiceButton.click(function(event){
         touchedBtn = "practice";
     }
     window.location.hash = '#practice';
-    localStorage.setItem ("ActiveTabID", "practise");
+   document.cookie = "hash = practice";
 });
 $backButtonPractice.click(function(event){
     event.preventDefault();
@@ -148,13 +149,13 @@ $('.popup__submit-btn').click(function(event){
         $(".confirm").css('display', 'initial');
         $thirdScreen.css('display', 'none');
         window.location.hash = '#confirm';
-        localStorage.setItem ("ActiveTabID", "confirm");
+        document.cookie = "hash = confirm";
     }
     if(!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')){
         $(".confirm").css('display', 'initial');
         $fourthScreen.css('display', 'none');
         window.location.hash = '#confirm';
-        localStorage.setItem ("ActiveTabID", "confirm");
+        document.cookie = "hash = confirm";
 
     }
 });
@@ -171,14 +172,3 @@ $('.confirm__back-button').click(function(event){
         window.location.hash = '#practice';
     }
 });
-
- $(window).on('load', function(){
-     var hash = window.location.hash;
-     
-     if(hash === '#classtype'){
-         $secondScreen.show('slow');
-     }
-     else{
-         console.log(hash);
-     }
- });
