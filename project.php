@@ -21,9 +21,6 @@
     <link href="style/datepicker.css" rel="stylesheet" type="text/css"/>
     <link href="style/popup-calendar.css" rel="stylesheet" type="text/css"/>
     <link href="style/confirmation.css" rel="stylesheet" type="text/css"/>
-          
-
-
 <body>
     <header class="header">
         <button class="header__menu-button">
@@ -124,125 +121,23 @@
         </div>    
     </div>
    <!--##################################LECTURE################################-->
-    <div class="auditoies">
+   <div class="auditoies">
         <span class="lecture-type">lecture classes</span>
         <button class="back-button__lecture classtype__button"><i class="icon-left-open"></i>Back</button>
         <div class="owl-carousel">
-            <div class="lecture-class">
-                <h3 class="lecture__num">219</h3>
-                <div class="time">
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">220</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">218</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">217</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">218</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">218</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="lecture-class">
-                <h3 class="lecture__num">218</h3>
-                <div class="time">
-                    
-                    <span class="lecture__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
+            <? require 'create_carousel_lec.php';?>
         </div>
     </div>
+   
    <!--##################################PRACTICE################################-->
    <div class="practice-auditories">
         <span class="practice-type">practice classes</span>
         <button class="back-button__practice classtype__button "><i class="icon-left-open"></i>Back</button>
         <div class="owl-carousel">
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-           <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-            <div class="practice-class">
-                <h3 class="practice__num">319</h3>
-                <div class="time">
-                    <span class="practice__cump">Central</span>
-                </div>
-                <button class="type__reserv-button classtype__button-choise">Select</button>
-            </div>
-           
-
+            <? require 'create_carousel_prac.php';?>
         </div>
-    </div>
+   </div>
+   
    <!--##################################POPUP CALENDAR################################-->
    
    <div class="b-popup" id="popup1">
@@ -289,8 +184,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="owl.carousel.min.js" type="text/javascript"></script>
     <script src="datepicker.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
