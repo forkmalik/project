@@ -1,12 +1,10 @@
-<? require 'db.php'; ?>
 <!DOCTYPE html>
+<? require 'db.php';?>
 <html>
-
-<head>
     <title>Book It Yourself</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ittle-logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/ittle-logo.png" type="image/png">    
     <link href="style/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -24,7 +22,7 @@
     <link href="style/popup-calendar.css" rel="stylesheet" type="text/css"/>
     <link href="style/confirmation.css" rel="stylesheet" type="text/css"/>
           
-</head>
+
 
 <body>
     <header class="header">
