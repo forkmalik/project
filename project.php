@@ -124,9 +124,7 @@
    <div class="auditoies">
         <span class="lecture-type">lecture classes</span>
         <button class="back-button__lecture classtype__button"><i class="icon-left-open"></i>Back</button>
-        <div class="owl-carousel">
-            <? require 'create_carousel_lec.php';?>
-        </div>
+         <? require 'create_carousel_lec.php';?>
     </div>
    
    <!--##################################PRACTICE################################-->
