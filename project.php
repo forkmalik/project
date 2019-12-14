@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <? require 'db.php';
+   require 'dateDB.php';
     header("Cache-Control: no-store, no-cache, must-revalidate");
     header("Expires: " . date("r"));
 ?>

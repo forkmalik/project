@@ -145,6 +145,17 @@ $(".classtype__button-choise").click(function(event){
 $('.popup__submit-btn').click(function(event){
     event.preventDefault();
     PopUpHide();
+    $currDay = $(".datepicker--cell-day .-selected-").attr("data-date");
+    $currYear = $(".datepicker--cell-day .-selected-").attr("data-year");
+    $currMonth = $(".datepicker--cell-day .-selected-").attr("data-month");
+    $currHour = $(".datepicker--time-current-hours");
+    $currMin = $(".datepicker--time-current-minutes");
+    
+    location.href("http://localhost/project/dateDB.php?currDay=" + $currDay);
+    location.href("http://localhost/project/dateDB.php?currHour=" + $currHour);
+    location.href("http://localhost/project/dateDB.php?currMin=" + $currMin);
+    
+    
     if(!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')){
         $(".confirm").css('display', 'initial');
         $thirdScreen.css('display', 'none');
@@ -172,3 +183,4 @@ $('.confirm__back-button').click(function(event){
         window.location.hash = '#practice';
     }
 });
+
