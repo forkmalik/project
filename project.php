@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<? require 'db.php';?>
+<? require 'db.php';
+    header("Cache-Control: no-store, no-cache, must-revalidate");
+    header("Expires: " . date("r"));
+?>
+
 <html>
     <title>Book It Yourself</title>
     <meta charset="UTF-8">
@@ -131,9 +135,7 @@
    <div class="practice-auditories">
         <span class="practice-type">practice classes</span>
         <button class="back-button__practice classtype__button "><i class="icon-left-open"></i>Back</button>
-        <div class="owl-carousel">
-            <? require 'create_carousel_prac.php';?>
-        </div>
+        <? require 'create_carousel_prac.php';?>
    </div>
    
    <!--##################################POPUP CALENDAR################################-->
