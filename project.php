@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <? require 'db.php';
-   require 'dateDB.php';
     header("Cache-Control: no-store, no-cache, must-revalidate");
     header("Expires: " . date("r"));
 ?>
@@ -147,7 +146,7 @@
             
             <div class="datepicker-here  popup__calendar" data-timepicker="true"></div>
             <button class="popup__submit-btn">Ok</button>
-        
+            <? require 'dateDB.php';?>
         </div>
     </div>
    <!--##################################CONFIRMATION################################-->
