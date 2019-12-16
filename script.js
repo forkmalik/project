@@ -172,3 +172,10 @@ $('.confirm__back-button').click(function(event) {
         window.location.hash = '#practice';
     }
 });
+$('.confirm__btn').click(function(event){
+    event.preventDefault();
+    if(!$firstScreen || $firstScreen.css('display', 'none')){
+        $('.confirm').css('display', 'none');
+        $firstScreen.css('display', 'initial');
+    }
+});
