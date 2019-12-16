@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <? require 'db.php';
-    header("Cache-Control: no-store, no-cache, must-revalidate");
-    header("Expires: " . date("r"));
 ?>
 
 <html>
