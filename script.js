@@ -144,25 +144,7 @@ $(".classtype__button-choise").click(function(event) {
 
 $('.popup__submit-btn').click(function(event) {
     event.preventDefault();
-    var date = {
-        'currDay': $(".datepicker--cell-day .-selected-").attr("data-date"),
-        'currYear': $(".datepicker--cell-day .-selected-").attr("data-year"),
-        'currMonth': $(".datepicker--cell-day .-selected-").attr("data-month"),
-        'currHour': $(".datepicker--time-current-hours"),
-        'currMin': $(".datepicker--time-current-minutes")
-    }
-
-    $ajax({
-        type: 'POST',
-        url: 'dateDB.php',
-        dataType: 'json',
-        data: "date=" + JSON.stringify(date)
-
-    });
     PopUpHide();
-
-
-
     if (!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')) {
         $(".confirm").css('display', 'initial');
         $thirdScreen.css('display', 'none');

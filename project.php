@@ -34,10 +34,10 @@
         <div class="hamburger-menu">
             <button class="closemenu-btn"><img src="img\closed.png" alt=""></button>
             <ul class="hamburger-menu__list">
-                <li class="humburger-menu__items"><a class="item-a" href="">home</a></li>
-                <li class="humburger-menu__items"><a class="item-a" href="">my bookings</a></li>
-                <li class="humburger-menu__items"><a class="item-a" href="">contacts</a></li>
-                <li class="humburger-menu__items"><a class="item-a" href="">support</a></li>
+                <li class="humburger-menu__items"><a class="item-a" href="error404.html">home</a></li>
+                <li class="humburger-menu__items"><a class="item-a" href="error404.html">my bookings</a></li>
+                <li class="humburger-menu__items"><a class="item-a" href="error404.html">contacts</a></li>
+                <li class="humburger-menu__items"><a class="item-a" href="error404.html">support</a></li>
             </ul>
         </div>    
         <h2 class="main-text animated pulse">Book It Yourself</h2>
@@ -146,7 +146,7 @@
             
             <div class="datepicker-here  popup__calendar" data-timepicker="true"></div>
             <button class="popup__submit-btn">Ok</button>
-            <? require 'dateDB.php';?>
+            
         </div>
     </div>
    <!--##################################CONFIRMATION################################-->
