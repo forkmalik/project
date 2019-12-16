@@ -9,81 +9,81 @@ var touchedBtn = "";
 
 
 window.location.hash = '#main';
-localStorage.setItem ("ActiveTabID", "main");
+localStorage.setItem("ActiveTabID", "main");
 
-$hamburgerButton.hover(function(event){
-    event.preventDefault();
-    $(this).css('cursor', 'pointer');
-    $secondImg.css('display', 'initial');
-    $firstImg.css('display', 'none');
+$hamburgerButton.hover(function(event) {
+        event.preventDefault();
+        $(this).css('cursor', 'pointer');
+        $secondImg.css('display', 'initial');
+        $firstImg.css('display', 'none');
     },
-    function(event){
-       event.preventDefault();
-    $(this).css('cursor', 'auto');
-    $secondImg.css('display', 'none');
-    $firstImg.css('display', 'initial');
-    
-});
-$hamburgerButton.click(function(event){
-    event.preventDefault(); 
-    if(!$('.hamburger-menu') || $('.hamburger-menu').css('display', 'none')){
-       $('.hamburger-menu').show('slow'); 
-       
+    function(event) {
+        event.preventDefault();
+        $(this).css('cursor', 'auto');
+        $secondImg.css('display', 'none');
+        $firstImg.css('display', 'initial');
+
+    });
+$hamburgerButton.click(function(event) {
+    event.preventDefault();
+    if (!$('.hamburger-menu') || $('.hamburger-menu').css('display', 'none')) {
+        $('.hamburger-menu').show('slow');
+
     }
 });
-$('.closemenu-btn').click(function(event){
+$('.closemenu-btn').click(function(event) {
     event.preventDefault();
-    if($('.hamburger-menu') || $('.hamburger-menu').css('display', 'initial')){
-       $('.hamburger-menu').hide('slow'); 
+    if ($('.hamburger-menu') || $('.hamburger-menu').css('display', 'initial')) {
+        $('.hamburger-menu').hide('slow');
     }
 });
-$bookingButton.click(function(event){
+$bookingButton.click(function(event) {
     event.preventDefault();
-    if(!$secondScreen || $secondScreen.css('display', 'none')){
+    if (!$secondScreen || $secondScreen.css('display', 'none')) {
         $firstScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
     }
     document.cookie = "hash = classtype";
     window.location.hash = '#classtype';
 });
-$backButton.click(function(event){
+$backButton.click(function(event) {
     event.preventDefault();
-    if(!$firstScreen || $firstScreen.css('display', 'none')){
+    if (!$firstScreen || $firstScreen.css('display', 'none')) {
         $secondScreen.css('display', 'none');
         $firstScreen.css('display', 'initial');
     }
     window.location.hash = '#main';
 });
 
- $( document ).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    margin:10,
-    nav:true,
-    navClass: ['slider__nav--left', 'slider__nav--right'],
-    responsive:{
-        0:{
-            items:1
-        },
-        700:{
-            items:2
-        },
-        900:{
-            items:3
-        },
-        1200:{
-            items: 4
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        nav: true,
+        navClass: ['slider__nav--left', 'slider__nav--right'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            700: {
+                items: 2
+            },
+            900: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
         }
-    }
-});
+    });
 });
 
- var $lectureButton = $(".lecture-button");
- var $thirdScreen = $('.auditoies');
- var $backButtonLecture = $('.back-button__lecture');
- 
- $lectureButton.click(function(event){
+var $lectureButton = $(".lecture-button");
+var $thirdScreen = $('.auditoies');
+var $backButtonLecture = $('.back-button__lecture');
+
+$lectureButton.click(function(event) {
     event.preventDefault();
-    if(!$thirdScreen || $thirdScreen.css('display', 'none')){
+    if (!$thirdScreen || $thirdScreen.css('display', 'none')) {
         $secondScreen.css('display', 'none');
         $thirdScreen.css('display', 'flex');
         touchedBtn = "lecture";
@@ -91,12 +91,12 @@ $backButton.click(function(event){
     window.location.hash = '#lecture';
     document.cookie = "hash = lecture";
 });
-$backButtonLecture.click(function(event){
+$backButtonLecture.click(function(event) {
     event.preventDefault();
-    if(!$secondScreen || $secondScreen.css('display', 'none')){
+    if (!$secondScreen || $secondScreen.css('display', 'none')) {
         $thirdScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
-        
+
     }
     window.location.hash = '#classtype';
 });
@@ -105,71 +105,71 @@ var $practiceButton = $('.practice-button');
 var $fourthScreen = $('.practice-auditories');
 var $backButtonPractice = $('.back-button__practice');
 
-$practiceButton.click(function(event){
+$practiceButton.click(function(event) {
     event.preventDefault();
-    if(!$fourthScreen || $fourthScreen.css('display', 'none')){
+    if (!$fourthScreen || $fourthScreen.css('display', 'none')) {
         $secondScreen.css('display', 'none');
         $fourthScreen.css('display', 'flex');
         touchedBtn = "practice";
     }
     window.location.hash = '#practice';
-   document.cookie = "hash = practice";
+    document.cookie = "hash = practice";
 });
-$backButtonPractice.click(function(event){
+$backButtonPractice.click(function(event) {
     event.preventDefault();
-    if(!$secondScreen || $secondScreen.css('display', 'none')){
+    if (!$secondScreen || $secondScreen.css('display', 'none')) {
         $fourthScreen.css('display', 'none');
         $secondScreen.css('display', 'flex');
     }
     window.location.hash = '#classtype';
 });
 
-$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
-    
-$(".classtype__button-choise").click(function(event){
+$(document).ready(function() {
+    //Скрыть PopUp при загрузке страницы    
+    PopUpHide();
+});
+//Функция отображения PopUp
+function PopUpShow() {
+    $("#popup1").show();
+}
+//Функция скрытия PopUp
+function PopUpHide() {
+    $("#popup1").hide();
+}
+
+$(".classtype__button-choise").click(function(event) {
     event.preventDefault();
     PopUpShow();
 });
 
-$('.popup__submit-btn').click(function(event){
+$('.popup__submit-btn').click(function(event) {
     event.preventDefault();
     var date = {
-    'currDay': $(".datepicker--cell-day .-selected-").attr("data-date"),
-    'currYear': $(".datepicker--cell-day .-selected-").attr("data-year"),
-    'currMonth': $(".datepicker--cell-day .-selected-").attr("data-month"),
-    'currHour': $(".datepicker--time-current-hours"),
-    'currMin': $(".datepicker--time-current-minutes")
+        'currDay': $(".datepicker--cell-day .-selected-").attr("data-date"),
+        'currYear': $(".datepicker--cell-day .-selected-").attr("data-year"),
+        'currMonth': $(".datepicker--cell-day .-selected-").attr("data-month"),
+        'currHour': $(".datepicker--time-current-hours"),
+        'currMin': $(".datepicker--time-current-minutes")
     }
-    
+
     $ajax({
         type: 'POST',
         url: 'dateDB.php',
         dataType: 'json',
-        data: "date="+JSON.stringify(date)
-        
+        data: "date=" + JSON.stringify(date)
+
     });
     PopUpHide();
-    
-    
-    
-    if(!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')){
+
+
+
+    if (!$(".confirm") || $(".confirm").css('display', 'none') && $thirdScreen.css('display', 'flex')) {
         $(".confirm").css('display', 'initial');
         $thirdScreen.css('display', 'none');
         window.location.hash = '#confirm';
         document.cookie = "hash = confirm";
     }
-    if(!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')){
+    if (!$(".confirm") || $(".confirm").css('display', 'none') && $fourthScreen.css('display', 'flex')) {
         $(".confirm").css('display', 'initial');
         $fourthScreen.css('display', 'none');
         window.location.hash = '#confirm';
@@ -177,17 +177,16 @@ $('.popup__submit-btn').click(function(event){
 
     }
 });
-$('.confirm__back-button').click(function(event){
+$('.confirm__back-button').click(function(event) {
     event.preventDefault();
-    if(!$thirdScreen || $thirdScreen.css('display', 'none') && touchedBtn === "lecture"){
+    if (!$thirdScreen || $thirdScreen.css('display', 'none') && touchedBtn === "lecture") {
         $('.confirm').css('display', 'none');
         $thirdScreen.css('display', 'flex');
         window.location.hash = '#lecture';
     }
-    if(!$fourthScreen || $fourthScreen.css('display', 'none') && touchedBtn === "practice"){
+    if (!$fourthScreen || $fourthScreen.css('display', 'none') && touchedBtn === "practice") {
         $('.confirm').css('display', 'none');
         $fourthScreen.css('display', 'flex');
         window.location.hash = '#practice';
     }
 });
-
