@@ -1,5 +1,5 @@
 <?
-$dbhost = "localhost";
+$dbhost = "localhost1";
 $dbname = "project";
 $username = "root";
 $password = "";

@@ -6,6 +6,7 @@ var $firstScreen = $(".main");
 var $secondScreen = $(".classtype");
 var $backButton = $(".back-button");
 var touchedBtn = "";
+var touchedNewBtn = "";
 
 
 window.location.hash = '#main';
@@ -172,9 +173,9 @@ $('.confirm__back-button').click(function(event) {
         window.location.hash = '#practice';
     }
 });
-$('.confirm__btn').click(function(event){
+$('.confirm__btn').click(function(event) {
     event.preventDefault();
-    if(!$firstScreen || $firstScreen.css('display', 'none')){
+    if (!$firstScreen || $firstScreen.css('display', 'none')) {
         $('.confirm').css('display', 'none');
         $firstScreen.css('display', 'initial');
     }
